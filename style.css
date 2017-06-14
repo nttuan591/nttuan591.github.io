@@ -1,0 +1,825 @@
+html{width: 100%;height: 100%}
+body{font-family: van_regular;font-size: 14px;width: 100%;height: 100%}
+*{margin: 0; padding: 0}
+h1,h2,h3,h4,h5{margin: 0}
+/*-------------------p------------------*/
+p{margin: 0;font-size: 14px;color: #666;line-height: 23px;letter-spacing: 0.5px}
+	/*responsive*/
+	@media (max-width: 736px){
+		p {font-size: 11px; line-height: 20px}
+	}
+/*-------END p--------*/
+ul li{list-style-type: none}
+/*------END reset--------*/
+/*---------font---------*/
+@font-face{	src:url('fonts/unicode.display.UVNVan_R.TTF');	font-family: van_regular} 
+@font-face{	src:url('fonts/14-13888-UVNVan_B (1).TTF');	font-family: van_bold}
+/*---------END font---------*/
+
+/*-----------h3.tieude----------*/
+h3.tieude{font-size: 40px;font-weight: bold;color: white;line-height: 45px}
+	/*responsive*/
+	@media (max-width: 736px){h3.tieude {font-size: 20px!important;margin-bottom: 0!important}	}
+/*-----------END h3.tieude----------*/
+
+/*------------icon-header----------*/
+.icon {   display: inline-block}
+.icon a img {    width: 23px;  margin-right: 15px}
+.icon a:last-child img {   margin-right: 0}
+/*------------END icon-header----------*/
+
+/*------nut-to-------*/
+a.nut-to {width: 290px;height: 60px;line-height: 60px;padding: 0;border-radius: 40px;border-color: transparent;transition: 0.4s}
+	/*responsive*/
+	@media (max-width: 736px){
+		a.nut-to {width: 140px;height: 40px;line-height: 40px;font-size: 12px}
+	}
+/*---------END nut-to---------*/
+
+/*---------nut-nho----------*/
+a.nut-nho{
+	background: url(images/bg-button.png) no-repeat center 5px;
+	background-size: contain;
+	font-size: 16px;
+	line-height: 40px;
+	color: #33cccc;
+	padding: 0;
+	height: 40px;
+	width: 100px;
+}
+a.nut-nho:hover{text-decoration: underline}
+/*---------END nut-nho----------*/
+
+/*--------prev & next of carousel-----------*/
+.slick-next:before {font-family: fontawesome;color: #d1579b;opacity: 1;font-size: 30px;display: block}
+.slick-prev:before {font-family: fontawesome;color: #d1579b;opacity: 1;font-size: 30px;display: block}
+	/*responsive*/
+		/*mobile*/
+		@media(max-width: 736px){.slick-next:before, .slick-prev:before{font-size: 20px}}
+/*--------END prev & next of carousel-----------*/
+
+/*-------------khoi-anh---------------*/
+ul.khoi-anh{width: 100%}
+ul.khoi-anh li {border: 5px solid white;box-sizing: border-box;position: relative;overflow: hidden;float: left}
+ul.khoi-anh li:hover a.images {transform: scale(1.1)}
+ul.khoi-anh li.anh1 {width: 50%;height: 600px;border-left: none}
+ul.khoi-anh li.anh2, ul.khoi-anh li.anh3 {width: 50%;height: 300px;border-right: none}
+ul.khoi-anh li.anh4 {width: 60%;height: 300px;border-left: none}
+ul.khoi-anh li.anh5 {width: 40%;height: 300px;border-right: none}
+ul.khoi-anh li a.images{
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: 0.4s;
+}
+ul.khoi-anh li.anh1 a.images{	background-image: url(images/nd1-1.jpg)}
+ul.khoi-anh li.anh2 a.images{	background-image: url(images/nd1-2.jpg)}
+ul.khoi-anh li.anh3 a.images{	background-image: url(images/nd1-3.jpg)}
+ul.khoi-anh li.anh4 a.images{	background-image: url(images/nd1-2.jpg)}
+ul.khoi-anh li.anh5 a.images{	background-image: url(images/nd1-5.jpg)}
+	/*responsive of khoi-anh*/
+		/*mobile*/
+		@media (max-width: 736px){
+			ul.khoi-anh li{border: 2px solid white}
+			ul.khoi-anh li.anh1{height: 250px}
+			ul.khoi-anh li.anh2,		
+			ul.khoi-anh li.anh3,		
+			ul.khoi-anh li.anh4,		
+			ul.khoi-anh li.anh5{height: 125px}		
+		}	/*end mobile*/
+/*-----------------End khoi-anh--------------*/
+
+/*---------banner-trang con------------*/
+.banner-trangcon{background:url(images/banner-trangcon.jpg) no-repeat center;background-size: contain;height: 400px}
+	/*responsive*/
+		/*mobile*/
+		@media(max-width: 736px){.banner-trangcon{height: 200px}}
+/*---------END banner-trang con------------*/
+
+/*----------icon-trangcon-----------*/
+.icon-2 ul li:nth-child(4) {margin-right: 15px}
+.icon-2 ul li {display: inline}
+	/*responsive*/
+	@media (max-width: 736px){.icon-2{margin-top: 20px}.icon-2 ul li:last-child a img{margin-top: 3px}}
+/*------------END icon-trangcon-------*/
+
+/*---------------list---------------*/
+ul.list li {display: inline;font-size: 15px;font-weight: bold;padding: 0 5px}
+ul.list {width: 100%}
+ul.list li a{color: #33cccc}
+/*---------------END list---------------*/
+
+/*-------------form-control-------------*/
+form .form-control{
+	font-size: 15px;
+	line-height: 24px;
+	color: #666;
+	border: none;
+	width: 100%;
+	height: 40px;
+	background: url(images/bg-input.png) no-repeat center;
+	background-size: contain;
+	margin-bottom: 20px;
+}
+	/*responsive*/
+		@media(max-width: 736px){form .form-control {background-position-x: 0}}
+/*-------------End form-control-------------*/
+
+/*-----------button.btn--------------*/
+button.btn {
+    background: url(images/bg-button.png) no-repeat center 5px;
+    background-size: contain;
+    font-size: 16px;
+    color: #33cccc;
+    padding: 0;
+    height: 40px;
+    width: 100px;
+    float: right;
+}
+button.btn:hover {text-decoration: underline}
+/*-----------End button.btn--------------*/
+
+/*----------------header-------------*/
+header .contact{margin-top: 25px;margin-left: 35px}
+header .phone {display: inline-block;font-size: 16px;color: #33cccc;font-weight: bold;margin-right: 30px}
+header .phone:before {
+	content: "\f095";
+	font-family: fontawesome;
+	background-color: #33cccc;
+	color: white;border-radius: 50%;
+	padding: 5px 7px;
+	margin-right: 10px;
+}
+header .navbar {padding: 0;height: 120px;box-sizing: border-box}
+header .navbar a.navbar-brand {padding: 0;margin: 0}
+header .navbar ul {display: inline-block;margin-top: 4px}
+header .navbar ul li.nav-item {margin: 0!important;padding-left: 30px}
+header .navbar ul li a.nav-link {font-weight: bold;color: #cc6699;font-size: 16px;transition: 0.3s}
+header .navbar ul li a.nav-link:hover {color: #33cccc}
+
+header .navbar ul li.chuxanh a.nav-link{color: #33cccc}
+/*responsive*/
+	/*mobile*/
+	@media (max-width: 736px){
+		header .navbar button {border: 1px solid #d1579b;margin-top: 15px}
+		header .navbar{height: 80px}
+		header .navbar a.navbar-brand img{width: 60%}
+		header .navbar #topmenu {width: 100%;}
+		header .navbar ul.nav {background: #d1579b;width: 100%;position: relative;z-index: 100;}
+		header .navbar ul li.nav-item {padding: 0}
+		header .navbar ul li a.nav-link {padding: 5px 0;color: white;text-align: center;font-size: 13px}
+	}
+	/*tablet*/
+	@media (max-width: 1024px) and (min-width: 768px){
+		header .navbar .icon img {width: 17px;margin: 0 5px}
+		header .navbar .phone {font-size: 12px}
+		header .navbar ul li a.nav-link {font-size: 10px}
+		header .navbar ul li.nav-item {padding-left: 15px}		
+	}
+/*-----------------menu-hienthi khi cuon chuot---------------*/
+header.menu-hienthi{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	border-bottom: 1px solid darkgrey;
+	background-color: white;
+	height: 70px;
+	animation: truotxuong 1s forwards;
+}
+@-webkit-keyframes truotxuong{
+	0%{transform: translateY(-70px);}
+	100%{transform: translateY(0px);}
+}
+header.menu-hienthi .navbar .contact {display: none}
+header.menu-hienthi .navbar{height: 100%}
+header.menu-hienthi .navbar a.navbar-brand img {height: 70px}
+header.menu-hienthi .navbar ul.navbar-nav{margin-top: 14px;}
+/*END*/
+/*-----------------end header------------*/
+/*-----------------footer----------------*/
+footer{background: url(images/footer-img1.jpg) no-repeat center top;background-size: contain;padding-top: 150px;margin-top: 50px}
+footer .text {font-size: 15px;color: #cc6699;display: inline-block;margin-right: 25px;transform: translateY(5px)}
+footer span{display: block;font-size: 13px;color: #666;margin-bottom: 20px}
+footer .row .right {padding-top: 35px}
+footer .row {height: auto;box-sizing: border-box}
+/*responsive*/
+	/*mobile*/
+	@media (max-width: 736px){
+		footer {padding-top: 60px}
+		footer .right {text-align: center;padding-top: 10px!important}
+		footer .text {display: block;margin: 0;margin-bottom: 10px}
+		header.menu-hienthi .navbar ul.navbar-nav{margin:0!important}
+	}
+/*--------------END footer---------------------*/
+/*---------------------------------------------------Trang chu-------------------------------------------------------*/
+	/*----------banner-----------*/
+.banner{margin-bottom: 50px;height: 82%;width: 100%}
+.banner .slider, .banner .slider .slick-list, .banner .slider .slick-list .slick-track{height: 100%}
+.banner .slider .slide-anh{background-repeat: no-repeat;background-position: center center;	height: 100%;background-size: cover}
+.banner .slider .slide-anh1{background-image: url(	images/banner1.jpg)}
+.banner .slider .slide-anh2{background-image: url(	images/banner.jpg)}
+.banner .slider .slide-anh3{background-image: url(	images/banner2.jpg)}
+.banner .slider .slide-anh a{width: 100%;height: 100%;display: block}
+.banner .slick-prev{left: 2%;z-index: 5}
+.banner .slick-prev:before{
+	content:"\f053";
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: white;
+	border-radius: 50%;
+}
+.banner .slick-next{right: 4%}
+.banner .slick-next:before{
+	content:"\f054";
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: white;
+	border-radius: 50%;
+}
+	/*responsive*/
+		/*mobile*/
+		@media (max-width: 736px){
+			.banner{margin-bottom: 20px; height: 170px}
+			.banner .slick-prev:before, .banner .slick-next:before{font-size: 15px;width: 30px;height: 30px;line-height: 30px}
+		}
+		/*tablet*/
+		@media(min-width: 736px) and (max-width: 1024px){
+			.banner{ height: 300px}
+		}
+/*------------------END banner-------------*/
+	/*--------------Home-nd1------------------*/
+.home-nd1 ul li {position: relative}
+.home-nd1 ul li .khoi-tieude {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: -105px;
+    left: 0;
+    z-index: 2;
+    background-color: #ffcc33;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.home-nd1 ul li:hover .khoi-tieude {bottom: 0}
+.home-nd1 .khoi-tieude h5{font-size: 20px;color: #000066;line-height: 24px;margin-bottom: 15px}
+.home-nd1 .khoi-tieude p{font-size: 15px;color: #333;line-height: 20px}
+.home-nd1 h3.tieude {
+    background-color: #d1579b;
+    text-align: center;
+    height: 86px;
+    line-height: 86px;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: 5px solid white;
+}
+.home-nd1 .button {text-align: center;margin-top: 50px}
+.home-nd1 .button a.nut-to {background-color: #33cccc;color: white}
+.home-nd1 .button a.nut-to:hover{background-color: transparent;color: #33cccc;border-color: #33cccc}
+	/*responsive*/
+		/*mobile*/
+		@media (max-width: 736px){
+			.home-nd1 h3.tieude {height: 60px; line-height: 60px;}			
+			.home-nd1 ul li .khoi-tieude {height: 90px;bottom: -59px;padding: 0px 5px}
+			.home-nd1 .khoi-tieude p {font-size: 6px;line-height: 11px}
+			.home-nd1 .khoi-tieude h5 {font-size: 9px;line-height: 14px;margin-bottom: 15px}
+			.home-nd1 .button {margin-top: 15px!important}
+		}	/*end mobile*/
+		/*tablet*/
+		@media (max-width: 1024px) and (min-width: 768px){
+			.home-nd1 ul li .khoi-tieude {height: 90px;bottom: -59px;padding: 0px 5px}
+			.home-nd1 .khoi-tieude p {font-size: 9px;line-height: 13px}
+			.home-nd1 .khoi-tieude h5 {font-size: 12px;line-height: 16px;margin-bottom: 15px}
+		}	/*end tablet*/
+/*-----------------END .home-nd1---------------*/
+	/*-----------------Home-nd2---------------*/
+.home-nd2 {margin-top: 60px;position: relative;height: 1190px}
+	/*css cho khoi-xanh*/
+.home-nd2 .khoi-xanh{
+    width: 60%;
+    height: 780px;
+    background-color: #33cccc;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    z-index: -1;
+}
+.home-nd2 .content {transform: translateY(30px);}
+.home-nd2 .content h3.tieude {padding-bottom: 20px}
+.home-nd2 .content .khoi-nd {height: 150px;margin-bottom: 30px}
+.home-nd2 .content .khoi-nd .anh {width: 150px;height: 150px;float: left}
+.home-nd2 .content .khoi-nd .anh img{width: 100%;height: 100%;border-radius: 50%}
+.home-nd2 .content .khoi-nd .info {display: inline-block;margin-left: 10px;margin-top: 19px}
+.home-nd2 .content .khoi-nd .info p {font-size: 15px;line-height: 25px;width: 250px;display: inline-block;color: white}
+.home-nd2 .content .khoi-nd .info h5 {font-size: 15px;color: #000066;font-weight: bold;margin-bottom: 10px}
+.home-nd2 .content .slider {padding-top: 40px;padding-bottom: 15px}
+.home-nd2 .content .slider .slick-list {height: 507px!important}
+.home-nd2 .content .slider .slick-prev {left: 60px;top: 0}
+.home-nd2 .content .slider .slick-prev:before {content: "\f0d8"}
+.home-nd2 .content .slider .slick-next {left: 60px;top: 100%}
+.home-nd2 .content .slider .slick-next:before {content: "\f0d7"}
+.home-nd2 a.btn{background-color: white;color: #33cccc;margin-top: 35px}
+.home-nd2 a.btn:hover {border-color: white;color: white;background-color: transparent}
+	/*---css cho khoi-vang---*/
+.home-nd2 .khoi-vang {
+    width: 50%;
+    height: 840px;
+    background-color: rgba(255, 204, 51, 0.82);
+    border-radius: 50px;
+    float: right;
+    margin-top: -380px;
+    position: relative;
+    z-index: 1;
+}
+.home-nd2 .khoi-vang .noidung{position: absolute;top: 30px;left: 30%}
+.home-nd2 .khoi-vang .noidung p {margin-bottom: 10px;width: 200px}
+.home-nd2 .khoi-vang .noidung ul li a {color: white;font-weight: bold;font-size: 20px;line-height: 37px}
+.home-nd2 .khoi-vang h3.tieude {width: 240px;margin-bottom: 20px}
+.home-nd2 .khoi-vang h3.tieude a {color: white}
+.home-nd2 .khoi-vang .chuongtrinh {position: absolute;bottom: 80px;left: 0;}
+.home-nd2 .khoi-vang .chuongtrinh a {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #d1579b;
+    display: block;
+    margin: 10px 0;
+    padding: 5px 30px;
+}
+	/*responsive*/
+		/*mobile*/
+		@media (max-width: 736px){
+
+			.home-nd2 .content {
+				border-radius: 50px;
+				background-color: #33cccc;
+				padding: 20px 0;
+				text-align: center;
+				transform: translateY(0);
+				margin-bottom: 30px;
+				height: 500px;
+			}
+			.home-nd2 a.btn { margin-top: 0}
+			.home-nd2 {margin-top: 50px;height: 1030px;}
+			.home-nd2 .slider-mobile .slick-next {right: 0; z-index: 5}
+			.home-nd2 .slider-mobile .slick-next:before {content: "\f0da"}
+			.home-nd2 .slider-mobile .slick-prev {left: 0;z-index: 5}
+			.home-nd2 .slider-mobile .slick-prev:before {content: "\f0d9"; z-index: 3}
+			.home-nd2 .slider-mobile {height: 350px;overflow: hidden}
+			.home-nd2 .slider-mobile .khoi-nd {margin: auto;text-align: center}
+			.home-nd2 .slider-mobile .khoi-nd .anh {margin: auto;float: none}
+			.home-nd2 .slider-mobile .slick-list {overflow: visible}
+			/*khoi-vang*/
+			.home-nd2 .khoi-vang {float: none;margin-top: 0;height: 500px;width: 100%}
+			.home-nd2 .khoi-vang .noidung {left: 50%;transform: translateX(-50%);text-align: center}
+			.home-nd2 h3.tieude {font-size: 20px;line-height: 32px}
+			.home-nd2 .khoi-vang .noidung ul li a {font-size: 15px;line-height: 24px}
+			.home-nd2 .khoi-vang .noidung p {margin: 10px auto}
+			.home-nd2 .khoi-vang .chuongtrinh {bottom: 50px;left: 50%;transform: translateX(-50%)}
+			.home-nd2 .khoi-vang .chuongtrinh a {font-size: 12px;width: 200px;padding: 0;text-align: center;margin: 8px 0}
+		}
+		/*END mobile*/
+
+		/*tablet*/
+		@media (max-width: 1024px) and (min-width: 768px){
+
+			.home-nd2 .content h3.tieude {font-size: 30px}
+			.home-nd2 .khoi-xanh {width: 70%}
+			.home-nd2 .khoi-vang h3.tieude {font-size: 30px;text-align: center;margin: auto}
+			.home-nd2 .khoi-vang {padding: 30px;margin: auto;height: 575px}
+			.home-nd2 .khoi-vang .chuongtrinh {transform: translate(0)}
+			.home-nd2 .khoi-vang .chuongtrinh span {font-size: 20px;padding-left: 10px;width: 300px}
+			.home-nd2 .khoi-vang .chuongtrinh a {font-size: 15px;width: 240px;padding-left: 15px}
+		}
+		/*END tablet*/
+/*----------------------END home-nd2----------------------*/
+
+	/*--------------------home-nd3------------------*/
+.home-nd3{width: 100%;position: relative;margin-top: 30px}
+.home-nd3 .khoi-vang{
+	background-color: #ffcc33;
+ 	right: 0;
+ 	width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.home-nd3 .content{
+	text-align: center;
+	background-color: #ffcc33;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+	padding-bottom: 30px;
+}
+.home-nd3 .content .khoi-nd .anh {width: 270px;height: 270px;margin: auto;position: relative}
+.home-nd3 .content .khoi-nd .anh:after{
+	content: "\f04b";
+	font-family: fontawesome;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.59);
+	color: white;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.home-nd3 .content .khoi-nd .anh img{width: 100%;height: 100%;border-radius: 50%}
+.home-nd3 .content .khoi-nd .info {padding: 30px}
+.home-nd3 .content .khoi-nd .info p {font-size: 15px;color: #333;line-height: 20px}
+.home-nd3 h3.tieude {padding: 30px 0}
+.home-nd3 .content .slider .slick-prev, .home-nd3 .content .slider .slick-next{	top: 30%}
+.home-nd3 .content .slider .slick-prev{left: 10px;z-index: 5}
+.home-nd3 .content .slider .slick-next{right: 10px}
+.home-nd3 .content .slider .slick-prev:before {	content: "\f053"}
+.home-nd3 .content .slider .slick-next:before {	content: "\f054"}
+.home-nd3 a.btn{background-color: white;color: #33cccc;margin-top: 20px}
+.home-nd3 a.btn:hover {border-color: white;color: white;background-color: transparent}
+	/*responsive*/
+		/*mobile*/
+		@media (max-width: 736px){
+			.home-nd3 .content{border-radius: 50px}
+			.home-nd3 h3.tieude{font-size: 30px;line-height: 0px}
+			.home-nd3 .slider-mobile {margin-top: 30px}
+			.home-nd3 .content .khoi-nd .anh{width: 200px;height: 200px}
+			.home-nd3 .content .slider-mobile .slick-prev{left: 10px;top: 30%;z-index: 5}
+			.home-nd3 .content .slider-mobile .slick-prev:before {content: "\f053"}
+			.home-nd3 .content .slider-mobile .slick-next{right: 10px;top: 30%}
+			.home-nd3 .content .slider-mobile .slick-next:before {content: "\f054"}
+		}
+		/*tablet*/
+		@media (max-width: 1366px) and (min-width: 768px){
+			.home-nd3{margin-top: 50px}
+			.home-nd3 .content .khoi-nd .anh {width: 200px;height: 200px;margin: auto}
+			.home-nd3 h3.tieude{font-size: 33px}
+		}
+/*-----------------------------END home-nd3---------------------------*/
+	/*-----------------home-nd4--------------*/
+.home-nd4 h3.tieude {color: #d1579b;text-align: center;margin-bottom: 35px}
+.home-nd4 .anh {margin: 0 15px;overflow: hidden}
+.home-nd4 .anh img {width: 100%;transition: 0.3s}
+.home-nd4 .anh:hover img {transform: scale(1.1)}
+.home-nd4 .khoi-nd {padding: 0}
+.home-nd4 .khoi-nd .tintuc p {font-size: 14px;line-height: 25px}
+.home-nd4 .khoi-nd .tintuc a {font-size: 25px;color: #cc6699;font-weight: bold;padding: 40px 0 20px 0;display: block}
+.home-nd4 .slick-next:before {content: "\f054"}
+.home-nd4 .slick-next {top: 25%;right: -20px;z-index: 5}
+.home-nd4 .slick-prev:before {content: "\f053"}
+.home-nd4 .slick-prev {left: -20px;top: 25%;z-index: 5}
+	/*responsive*/
+		/*mobile*/
+		@media (max-width: 736px){
+			.home-nd4{margin-top: 30px}
+			.home-nd4 .anh{margin: auto;width: 200px}
+			.home-nd4 h3.tieude{margin-bottom: 10px!important}
+			.home-nd4 .khoi-nd .tintuc a{padding: 10px 0;font-size: 16px}
+			.home-nd4 .khoi-nd .tintuc p {font-size: 11px;line-height: 19px;width: 200px;margin: auto}
+			.home-nd4 .slick-prev {left: 15%;top: 30%;z-index: 5}
+			.home-nd4 .slick-next {right: 15%;top: 30%;z-index: 5}
+		}
+/*-------------------------END home-nd4----------------*/
+
+	/*----------------home-nd5--------------*/
+.home-nd5 h3.tieude {background-color: #33cccc;text-align: center;padding: 15px 0;border-bottom: 5px solid white}
+.home-nd5 {margin-top: 80px}
+	/*responsive*/
+		/*mobile*/
+		@media(max-width: 736px){
+			.home-nd5{margin-top: 30px}
+			.home-nd5 h3.tieude{padding: 0}
+		}
+/*------------------------END home-nd5-----------------*/
+
+	/*---------------home-nd6--&--trang lien he----------*/
+.lienhe-nd, .home-nd6, .home-nd4{margin-top: 50px}
+.home-nd6 h3.tieude, .lienhe-nd h3.tieude, .tuyensinh-nd2 h3.tieude {color: #33cccc;margin-bottom: 20px}
+.home-nd6 .contact{margin-bottom: 20px}
+.home-nd6 .contact article, .lienhe-nd .contact article {font-size: 15px;color: #666;line-height: 26px}
+.home-nd6 .contact article span, .lienhe-nd .contact article span {color: #33cccc;font-weight: bold;margin-right: 10px}
+.home-nd6 form textarea#tinnhan, .lienhe-nd form textarea#tinnhan {
+    background: url(images/bg-text.png) no-repeat;
+    background-size: contain;
+    height: 138px;
+}
+	/*responsive*/
+		/*mobile*/
+		@media (max-width: 736px){
+			.home-nd6{margin-top: 30px}
+			.home-nd6 form, .lienhe-nd form, .tuyensinh-nd2 form {margin-bottom: 50px}
+			.home-nd6 form #tinnhan, .lienhe-nd form #tinnhan, .tuyensinh-nd2 form #tinnhan {height: 90px}
+			form article{display: inherit!important;}
+			form article select {margin-right: 15px}
+			form .ngay-di-hoc label {margin-bottom: 10px!important}
+			
+		}
+/*--------------------------END home-nd6--&--trang lien he-------------*/
+/*----------------------------------------------------END Trang chu----------------------------------------------------*/
+/*--------------------------------------------------Trang nhan su--------------------------------------------------------*/
+.nhansu-nd1{margin-top: 50px}
+.nhansu-nd1 .khoi-thongtin{margin-bottom: 40px}
+.nhansu-nd1 .khoi-thongtin .name {
+    color: #33cccc;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    text-transform: uppercase;
+}
+.nhansu-nd1 .khoi-thongtin p {line-height: 21px}
+/*--------------------------------------------------End Trang nhan su--------------------------------------------------------*/
+/*------------------------------------------------Trang su kien--&--Trang phu huynh------------------------------------------------------*/
+/*------------sukien-nd-----------------*/
+/*--------------sukien-nd-trai------------*/
+.sukien-nd, .phuhuynh-nd {margin-top: 50px}
+.sukien-nd .sukien-nd-trai h5.td, .phuhuynh-nd .phuhuynh-nd-trai h5.td {font-size: 20px;color: #33cccc;margin-bottom: 10px}
+.sukien-nd .sukien-nd-trai img, .phuhuynh-nd .phuhuynh-nd-trai img {width: 100%;margin: 20px 0}
+/*--------------END sukien-nd-trai------------*/
+/*--------------sukien-nd-phai------------*/
+.sukien-nd-phai h3.tieude, .phuhuynh-nd-phai h3.tieude {
+    background-color: #33cccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.sukien-nd-phai .tin-sukien, .phuhuynh-nd-phai .tin-phuhuynh{margin-bottom: 40px}
+.sukien-nd-phai .tin-sukien p, .phuhuynh-nd-phai .tin-phuhuynh p{margin-bottom: 5px}
+.sukien-nd-phai .tin-sukien a.tin-sukien-td, .phuhuynh-nd-phai .tin-phuhuynh a.tin-phuhuynh-td {
+    font-size: 20px;
+    color: #33cccc;
+    padding: 10px 0 5px 0;
+    display: block;
+}
+/*--------------END sukien-nd-phai------------*/
+	/*responsive*/
+		/*mobile*/
+		@media(max-width: 736px){
+			.sukien-nd, .phuhuynh-nd{margin-top: 20px}
+			.phuhuynh-nd-phai, .sukien-nd-phai{margin-top: 20px}
+			.sukien-nd-phai h3.tieude, .phuhuynh-nd-phai h3.tieude{margin-bottom: 20px!important}
+		}
+/*------------------------------------------------END Trang su kien--&--Trang phu huynh---------------------------------------------------*/
+/*------------------------------------------------Trang chuong trinh--&--Trang gioi thieu--&--Trang cham soc--------------------------------*/
+/*--------------------menu-con------------------------*/
+nav.menu-con {
+    border-bottom: 1px solid #666;
+    padding-bottom: 15px!important;
+    margin-bottom: 30px;
+    padding: 0;
+}
+nav.menu-con ul li{margin: 0!important}
+nav.menu-con ul li a{
+    font-size: 15px;
+    font-weight: bold;
+    color: #d1579b;
+    padding: 0 15px !important;
+    border-left: 2px solid #d1579b;
+    transition: 0.3s;
+}
+nav.menu-con ul li a.active{color:#33cccc}
+nav.menu-con ul li a:hover {color: #33cccc}
+nav.menu-con ul li:first-child a {border: none;padding-left: 0}
+	@media(max-width: 736px){
+		nav.menu-con{margin-bottom: 10px;padding-bottom: 10px!important;}
+		nav.menu-con ul li {width: 50%;margin-bottom: 5px!important}
+		nav.menu-con ul li a {border: none;padding-left: 0;font-size: 14px}
+	}
+/*---------------------------End menu-con-------------------------------*/
+
+.tinchitiet {position: absolute;z-index: 1;opacity: 0;transition: 0.4s}
+.tinchitiet.hienthi{opacity: 1; z-index: 2}
+.tinchitiet h5 {font-size: 30px;color: #d15899;margin-bottom: 15px}
+.chuongtrinh-nd .tinchitiet .anh{height: 100%}
+.chuongtrinh-nd .tinchitiet .anh img {width: 100%;height: 100%}
+/*--------chuongtrinh-nd-----------*/
+.chuongtrinh-nd .row{height: 465px}
+.chuongtrinh-nd .row.tren {margin-bottom: 50px}
+.chuongtrinh-nd .row .col-md-12 {padding-bottom: 15px}
+.chuongtrinh-nd .row .col-md-5 {padding-right: 0}
+.chuongtrinh-nd .row .col-md-6.phai {padding-left: 0;padding-bottom: 15px}
+.chuongtrinh-nd .khoi-tin {position: relative;height: 1080px}
+/*--------End chuongtrinh-nd-----------*/
+/*--------gioithieu-nd-----------*/
+.gioithieu-nd .khoi-tin {position: relative;height: 600px}
+/*--------End gioithieu-nd-----------*/
+/*--------chamsoc-nd-----------*/
+.chamsoc-nd .khoi-tin {position: relative;height: 1415px}
+.chamsoc-nd .tinchitiet.thuc-don-mau h5 {color: #33cccc;font-size: 40px;height: 100%;line-height: 136px}
+.chamsoc-nd table{width: 100%}
+.chamsoc-nd table.de-muc {margin-bottom: 20px}
+
+.chamsoc-nd table.de-muc tr th {
+    width: 160px;
+    height: 90px;
+    text-align: center;
+    background-color: #d1579b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 4px solid white;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.chamsoc-nd table.de-muc tr th.vang {background-color: #ffcc33;color: #d1579b;width: 133px}
+.chamsoc-nd table.noi-dung tr td{width: 160px;background-color: #ddf2f6;border: 4px solid white;font-size: 14px;color: gray}
+.chamsoc-nd table.noi-dung tr td.lop {
+    width: 133px;
+    background-color: #ddf2f6;
+    text-align: center;
+    color: #3ec1c7;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.chamsoc-nd table.noi-dung tr td.anh{
+    width: 160px;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: contain!important;
+}
+.chamsoc-nd table.noi-dung tr.bua-sang td.anh {background: url(images/bua-sang.jpg);background-color: #3ec1c7;height: 300px}
+.chamsoc-nd table.noi-dung tr.bua-trua td.anh{background: url(images/bua-trua.jpg);background-color: #ffcc33;height: 500px}
+.chamsoc-nd table.noi-dung tr.bua-chieu td.anh{background: url(images/bua-chieu.jpg);background-color: #d1579b;height: 300px}
+	/*responsive*/
+		/*mobile*/
+		@media(max-width: 736px){
+			.tinchitiet h5{font-size: 20px;margin-bottom: 10px}
+			.chamsoc-nd .khoi-tin {height: 910px}
+			.chamsoc-nd .tinchitiet.thuc-don-mau h5 {font-size: 25px;line-height: 0;text-align: center;margin-top: 10px}		
+			.chamsoc-nd table.de-muc {margin-top: 30px;margin-bottom: 0}
+			.chamsoc-nd table.de-muc tr th {font-size: 12px;height: 50px;border: 2px solid white}
+			.chamsoc-nd table.noi-dung tr td {border: 2px solid white;font-size: 10px}
+			.chamsoc-nd table.noi-dung tr td.lop {font-size: 8px; height: 75px}
+			.chamsoc-nd table.noi-dung tr.bua-chieu td.anh {height: 150px}
+			.chamsoc-nd table.noi-dung tr.bua-trua td.anh {height: 200px}
+			.chamsoc-nd table.noi-dung tr.bua-sang td.anh {height: 150px}
+		}
+		/*tablet*/
+		@media(max-width: 1366px) and (min-width: 768px){
+			.chamsoc-nd .tinchitiet.thuc-don-mau h5 {font-size: 23px}
+		}
+/*--------End chamsoc-nd-----------*/
+	/*responsive*/
+		/*mobile*/
+		@media (max-width: 736px){
+				
+			/*-----chuongtrinh-nd-----*/
+			.chuongtrinh-nd .khoi-tin{height: 1860px}
+			.chuongtrinh-nd .tinchitiet .row {height: auto}
+			.chuongtrinh-nd .row.tren {margin-bottom: 30px}
+			.chuongtrinh-nd .tinchitiet .row.tren .anh {height: 350px;margin-bottom: 10px}			
+			.chuongtrinh-nd .tinchitiet .row.duoi .trai .anh {height: 100px}
+			.chuongtrinh-nd .tinchitiet .row.duoi .trai ._top {padding-right: 7px}
+			.chuongtrinh-nd .tinchitiet .row.duoi .trai ._bottom {padding-left: 7px}
+			.chuongtrinh-nd .tinchitiet .row.duoi .phai{padding-left: 15px}
+			.chuongtrinh-nd .tinchitiet .row.duoi .phai .anh {height: 350px}
+			.chuongtrinh-nd .tinchitiet .row.duoi .col-md-5{padding-right:15px}
+			.chuongtrinh-nd .row.tren .col-md-5{padding-right: 15px}
+			/*-----End chuongtrinh-nd-----*/
+
+			/*-----gioithieu-nd-----*/
+			.gioithieu-nd .khoi-tin{height: 950px}
+			/*-----End gioithieu-nd-----*/	
+		}
+		/*tablet*/
+		@media(max-width: 1024px) and (min-width: 768px){
+			.tinchitiet p {font-size: 10px;line-height: 17px}
+		}
+/*------------------------------------------------END Trang chuong trinh--&--Trang gioi thieu------------------------------------------------------*/
+/*------------------------------------------------Trang tuyen sinh--$--Trang tuyen dung--------------------------------------------------*/
+/*-----tuyensinh-nd1--&--tuyendung-nd1-----------*/
+.tuyensinh-nd1 .thongtin-tuyensinh, .tuyendung-nd1 .thongtin-tuyendung {margin-top: 50px}
+.tuyensinh-nd1 h3.tieude, .tuyendung-nd1 h3.tieude {color: #3ec1c7;margin-bottom: 20px}
+.tuyensinh-nd1 .thongtin-tuyensinh .card, .tuyendung-nd1 .thongtin-tuyendung .card {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.tuyensinh-nd1 .thongtin-tuyensinh .card .card-header, .tuyendung-nd1 .thongtin-tuyendung .card .card-header {
+    border-bottom: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.tuyensinh-nd1 .thongtin-tuyensinh .card a, .tuyendung-nd1 .thongtin-tuyendung .card a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #cc6699;
+}
+.tuyensinh-nd1 .thongtin-tuyensinh .card a img, .tuyendung-nd1 .thongtin-tuyendung .card a img {padding-right: 15px;transition: 0.3s}
+
+.tuyensinh-nd1 .thongtin-tuyensinh .card a img.xoay, .tuyendung-nd1 .thongtin-tuyendung .card a img.xoay {transform: rotate(90deg)}
+/*-----End tuyensinh-nd1--&--tuyendung-nd1-----------*/
+
+/*-----tuyensinh-nd2-----*/
+	/*-----trai-----*/
+.tuyensinh-nd2{margin: 50px 0}
+.tuyensinh-nd2 p {font-size: 15px;color: #333;margin-top: 15px;text-align: center}
+.tuyensinh-nd2 .trai .content .khoi-anh {width: 250px;height: 270px;position: relative;margin: auto}
+.tuyensinh-nd2 .trai h3.tieude {text-align: center}
+.tuyensinh-nd2 .phai h3.tieude {margin-bottom: 40px}
+.tuyensinh-nd2 .trai .content .khoi-anh img.layer-tren {
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+}
+.tuyensinh-nd2 .trai .content .khoi-anh img.anh-vang {position: absolute;z-index: 1}
+.tuyensinh-nd2 .slider .slick-prev, .tuyensinh-nd2 .slider .slick-next{	top: 30%}
+.tuyensinh-nd2 .slider .slick-prev{left: 20%;z-index: 5}
+.tuyensinh-nd2 .slider .slick-next{right: 20%}
+.tuyensinh-nd2 .slider .slick-prev:before {	content: "\f053"}
+.tuyensinh-nd2 .slider .slick-next:before {	content: "\f054"}
+	/*----phai-----*/
+form .col-md-12 .form-control{background-image: url(images/bg-diachi.png)}
+
+form .ngay-di-hoc label {
+    float: left;
+    font-size: 15px;
+    color: #666;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+form .ngay-di-hoc article {padding: 0}
+form .col-md-12 p {margin-top: 15px}
+.tuyensinh-nd2 .phai p{text-align: left}
+.tuyensinh-nd2 .phai form .form-control{font-size: 15px; color: #666}
+form .ngay-sinh label {display: block;font-size: 15px;color: #666;margin: 0;transform: translateY(-8px);}
+
+form article {display: flex;justify-content: space-between}
+form article select {
+    border: none;
+    background: url(images/bg-date.png) no-repeat;
+    background-size: contain;
+    width: 65px;
+    color: #3ec1c7;
+    padding: 0 3px;
+}
+/*-----End tuyensinh-nd2-----*/
+	/*responsive*/
+		/*mobile*/
+		@media(max-width: 736px){
+			.tuyensinh-nd1 .thongtin-tuyensinh, .tuyendung-nd1 .thongtin-tuyendung{margin-top: 20px}
+			.tuyensinh-nd2 .trai, {margin-bottom: 50px}
+			.tuyensinh-nd1 .thongtin-tuyensinh .card, .tuyendung-nd1 .thongtin-tuyensinh .card {margin-bottom: 10px}
+			.tuyensinh-nd1 .thongtin-tuyensinh .card a, .tuyendung-nd1 .thongtin-tuyensinh .card a {font-size: 18px}
+			.tuyensinh-nd2 .slider .slick-prev{left: 0}
+			.tuyensinh-nd2 .slider .slick-next{right: 0}
+			.tuyensinh-nd2{margin-top: 20px}
+		}
+		/*tablet*/
+		@media(max-width: 1024px) and (min-width: 768px){
+			.tuyensinh-nd2 form .ngay-sinh label {font-size: 13px}
+			.tuyensinh-nd2 .phai .form-group {margin: 0}
+			.tuyensinh-nd2 .phai .form-group .form-control {font-size: 13px}
+			.tuyensinh-nd2 form .ngay-sinh select {font-size: 13px;width: 47px}
+			.tuyensinh-nd2 .slider .slick-prev {left: 0}
+			.tuyensinh-nd2 .slider .slick-next {right: 0}
+			h3.tieude {font-size: 30px}
+		}
+/*------------------------------------------------End Trang tuyen sinh--&--Trang tuyen dung--------------------------------------------------*/
+/*------------------------------------------------Trang thu vien--------------------------------------------------*/
+.thuvien-nd1 .khoi-anh, .thuvien-nd2 .khoi-video {margin-bottom: 50px;margin-top: 20px;cursor: pointer}
+.thuvien-nd1 .khoi-anh span, .thuvien-nd2 .khoi-video span{font-size: 20px;color: #666}
+.thuvien-nd1 h3.tieude, .thuvien-nd2 h3.tieude{color: #3ec1c7}
+.thuvien-nd1 .khoi-anh .album, .thuvien-nd2 .khoi-video .album{position: relative;height: 300px;width: 100%}
+.thuvien-nd2 .khoi-video .album{height: 250px}
+.thuvien-nd2 .khoi-video .album:after {
+	content: "\f04b";
+	font-family: fontawesome;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.69);
+	color: white;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+}
+.thuvien-nd1 .khoi-anh .album img, .thuvien-nd2 .khoi-video .album img{position: absolute;width: 100%;height: 100%}
+	/*responsive*/
+		/*mobile*/
+		@media(max-width: 736px){
+			.thuvien-nd1 .khoi-anh, .thuvien-nd2 .khoi-video{margin-bottom: 20px}
+		}
+/*------------------------------------------------End Trang thu vien--------------------------------------------------*/
